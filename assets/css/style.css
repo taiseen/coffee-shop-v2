@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+
+/* 24 - Jan - 2022  */
+* {
+  margin            : 0;
+  padding           : 0;
+  border            : 0;
+  outline           : none;
+  list-style        : none;
+  text-decoration   : none !important;
+  text-transform    : capitalize;
+  box-sizing        : border-box;
+  font-family       : 'Nunito', sans-serif;
+  transition        : all .1s linear;
+  /* user-select    : none; */
+}
+
+html {
+  font-size         : 70%;
+  scroll-behavior   : smooth;
+  scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #FFF;
+  border-radius   : 5rem;
+}
+
+body {
+  background-color: #010103;
+}
+
+.btn {
+  display   : inline-block;
+  margin    : 1rem auto;
+  padding   : .9rem 3rem;
+  background: #D3AD7F;
+  cursor    : pointer;
+  font-size : 1.7rem;
+  color     : #FFF;
+}
+
+.btn:hover {
+  letter-spacing: .1rem;
+}
+
+.header {
+  display         : flex;
+  flex-wrap       : wrap;
+  gap             : 1rem;
+  align-items     : center;
+  justify-content : space-between;
+  background-color: #010103;
+  padding         : 1.5rem 7%;
+  border-bottom   : 0.1rem solid rgba(255, 255, 255, 0.3);
+  position        : fixed;
+  top             : 0;
+  left            : 0;
+  right           : 0;
+  z-index         : 101;
+}
+
+.header .logo img {
+  height: 6rem;
+}
+
+.header .navbar a {
+  margin   : 0 1rem;
+  font-size: 1.6rem;
+  color    : #FFF;
+}
+
+.header .navbar a:hover {
+  color         : #D3AD7F;
+  border-bottom : 0.1rem solid #D3AD7F;
+  padding-bottom: .5rem;
+}
+
+.header .icons div {
+  cursor     : pointer;
+  margin-left: 2rem;
+  font-size  : 2.5rem;
+  color      : #FFF;
+}
+
+.header .icons div:hover {
+  color: #D3AD7F;
+}
+
+.header .search-form {
+  position        : absolute;
+  top             : 115%;
+  right           : 7%;
+  background-color: #FFF;
+  width           : 50rem;
+  height          : 5rem;
+  display         : flex;
+  align-items     : center;
+  transform       : scaleY(0);
+  transform-origin: top;
+}
+
+.header .search-form.user-click-at-search {
+  transform: scaleY(1);
+}
+
+.header .search-form input {
+  width    : 100%;
+  height   : 100%;
+  padding  : 1rem;
+  font-size: 1.6rem;
+  color    : #13131a;
+}
+
+.header .search-form label {
+  cursor      : pointer;
+  margin-right: 1.5rem;
+  font-size   : 2rem;
+  color       : #13131a;
+}
+
+.header .search-form label:hover {
+  color: #D3AD7F;
+}
+
+.header .cart-item-container {
+  position        : absolute;
+  top             : 100%;
+  right           : -100%;
+  width           : 30rem;
+  height          : calc(100vh - 9.5rem);
+  padding         : 0 1.5rem;
+  background-color: #FFF;
+  transition      : right .5s linear;
+}
+
+.header .cart-item-container.user-click-at-cart {
+  right: 0;
+}
+
+.header .cart-item-container .cart-item {
+  position      : relative;
+  display       : flex;
+  align-items   : center;
+  gap           : 1.5rem;
+  margin        : 2rem 0;
+  padding-bottom: 1rem;
+  border-bottom : .1rem solid #ccc;
+}
+
+.header .cart-item-container .cart-item img {
+  height: 7rem;
+}
+
+.header .cart-item-container .cart-item .content h3 {
+  padding-bottom: .5rem;
+  font-size     : 2rem;
+  color         : #13131a;
+}
+
+.header .cart-item-container .cart-item .content .price {
+  font-size: 1.5rem;
+  color    : #D3AD7F;
+}
+
+.header .cart-item-container .cart-item span {
+  position : absolute;
+  top      : 1rem;
+  right    : 1rem;
+  cursor   : pointer;
+  font-size: 2rem;
+  color    : #13131a;
+}
+
+.header .cart-item-container .cart-item span:hover {
+  transform: rotate(180deg);
+  color    : #D3AD7F;
+}
+
+.header .cart-item-container .btn {
+  width     : 100%;
+  text-align: center;
+}
+
+#menuBtn {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 1.5em 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Number 1 :- show at small screen */
+  #menuBtn {
+    display: inline-block;
+  }
+
+  /* Number 2 :- hide at small screen & position change */
+  .header .navbar {
+    position        : absolute;
+    top             : 100%;
+    right           : -100%;
+    width           : 25rem;
+    height          : calc(100vh - 9.5rem);
+    background-color: #FFF;
+    /* Number 3     :- show at user click by --> JS */
+  }
+
+  .header .navbar.user-click-at-menu {
+    right: 0;
+  }
+
+  .header .navbar a {
+    display         : block;
+    text-align      : center;
+    margin          : 1rem .8rem;
+    padding         : 1rem;
+    border-radius   : .5rem;
+    background-color: #666;
+    font-size       : 2rem;
+    color           : #FFF;
+  }
+
+  .header .navbar a:hover {
+    color           : #13131a;
+    background-color: #D3AD7F;
+  }
+
+  .header .search-form {
+    width: 90%;
+    right: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

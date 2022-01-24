@@ -1,0 +1,63 @@
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.5em 2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    /* Number 1 :- show at small screen */
+    #menuBtn {
+        display: inline-block;
+    }
+
+    /* Number 2 :- hide at small screen & position change */
+    .header {
+
+        .navbar {
+            position        : absolute;
+            top             : 100%;
+            right           : -100%;
+            width           : 25rem;
+            height          : calc(100vh - 9.5rem);
+            background-color: $white;
+
+            /* Number 3 :- show at user click by --> JS */
+            &.user-click-at-menu {
+                right: 0;
+            }
+
+            a {
+                display         : block;
+                text-align      : center;
+                margin          : 1rem .8rem;
+                padding         : 1rem;
+                border-radius   : .5rem;
+                background-color: $light-color;
+                @include fontStyle(2rem, $white);
+
+                &:hover {
+                    color           : $black;
+                    background-color: $main-color;
+                }
+            }
+        }
+
+        .search-form {
+            width: 90%;
+            right: 2rem;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+}
