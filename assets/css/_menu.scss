@@ -20,6 +20,10 @@
                 }
             }
 
+            // &:hover * {
+            //     color: $black;
+            // }
+
             img {
                 height: 10rem;
             }
@@ -34,9 +38,9 @@
                 @include fontStyle(2.5rem, $white);
 
                 span {
-                    font-size: 1.5rem;
+                    font-size      : 1.5rem;
                     text-decoration: line-through;
-                    font-weight: lighter;
+                    font-weight    : lighter;
                 }
             }
         }

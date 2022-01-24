@@ -1,3 +1,68 @@
-.products{
-    
+.products {
+
+    .box-container {
+
+        @include grid(30rem);
+
+        .box {
+
+            text-align: center;
+            border    : $border;
+            padding   : 2rem;
+
+            &:hover {
+                // background-color: $white;
+            }
+
+            .icons {
+                a {
+                    height     : 5rem;
+                    width      : 5rem;
+                    line-height: 5rem;
+                    margin     : .3rem;
+                    border     : $border;
+                    @include fontStyle(2rem, $white);
+
+                    &:hover {
+                        background-color: $main-color;
+                    }
+                }
+            }
+
+            .image {
+                padding: 2.5rem 0;
+
+                img {
+                    height: 25rem;
+                }
+            }
+
+            .content {
+
+                h3 {
+                    padding: 1rem 0;
+                    @include fontStyle(2.5rem, $white);
+                }
+
+                .stars {
+                    padding: 1.5rem;
+
+                    i {
+                        @include fontStyle(1.7rem, $main-color);
+                    }
+                }
+
+                .price {
+                    @include fontStyle(1.7rem, $main-color);
+
+                    span {
+                        font-size      : 1.5rem;
+                        font-weight    : lighter;
+                        text-decoration: line-through;
+                    }
+                }
+            }
+        }
+    }
+
 }
