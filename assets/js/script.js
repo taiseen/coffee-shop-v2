@@ -21,7 +21,7 @@ cartBtn.addEventListener('click', () => {
     cartContainer.classList.toggle('user-click-at-cart');
 
     // close remaining all...
-    searchForm.classList.removeve('user-click-at-search');
+    searchForm.classList.remove('user-click-at-search');
     navbar.classList.remove('user-click-at-menu');
 });
 

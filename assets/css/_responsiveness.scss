@@ -6,6 +6,10 @@
     .header {
         padding: 1.5em 2rem;
     }
+
+    section {
+        padding: 2rem;
+    }
 }
 
 
@@ -51,6 +55,20 @@
         .search-form {
             width: 90%;
             right: 2rem;
+        }
+    }
+
+    .home {
+        background-position: left;
+        justify-content    : center;
+        text-align         : center;
+
+        h3 {
+            font-size: 4.5rem
+        }
+
+        p {
+            font-size: 1.5rem
         }
     }
 }

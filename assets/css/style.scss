@@ -42,6 +42,14 @@ body {
     background-color: $bg;
 }
 
+/* 
+Style Scale for all 
+but in responsive - its resizing at 991px
+*/
+section {
+    padding: 2rem 7%;
+}
+
 .btn {
     display   : inline-block;
     margin    : 1rem auto;
@@ -53,8 +61,8 @@ body {
     &:hover {
         letter-spacing: .1rem;
     }
-
 }
 
 @import 'header';
+@import 'home';
 @import 'responsiveness';

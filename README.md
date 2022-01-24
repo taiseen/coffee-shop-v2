@@ -7,5 +7,7 @@
 ## Learning Context
 - SASS ==> variable , nesting , @mixing + @include 
 - Side Toggle Menu Button 
+- Side Cart Menu 
+- Search Button 
 - Div Opacity Hover Effect 
 - Responsiveness
