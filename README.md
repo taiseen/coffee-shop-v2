@@ -1,6 +1,6 @@
 24 - Jan - 2022 
 
-# Coffee Shop - v2 | [Live-Link](https://taiseen.github.io/repo-name)
+# Coffee Shop - v2 | [Live-Link](https://taiseen.github.io/coffee-shop-v2)
 
 ## Inspire & Learning From ==> [this link](https://youtu.be/TVFu4-Kd4oM)
 

@@ -1,0 +1,32 @@
+.about {
+
+    .row {
+        display         : flex;
+        flex-wrap       : wrap;
+        align-items     : center;
+        background-color: $black;
+
+        .image {
+            flex: 1 1 45rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .content {
+            flex   : 1 1 45rem;
+            padding: 2rem;
+
+            h3 {
+                @include fontStyle(3rem, $white);
+            }
+
+            p {
+                padding    : 1rem 0;
+                line-height: 1.8;
+                @include fontStyle(1.6rem, $white);
+            }
+        }
+    }
+}

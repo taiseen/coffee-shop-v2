@@ -1,0 +1,45 @@
+.menu {
+
+    // max-width: 1100px;
+    // margin   : 0 auto;
+
+    .box-container {
+
+        @include grid(30rem);
+
+        .box {
+            padding   : 5rem;
+            border    : $border;
+            text-align: center;
+
+            &:hover {
+                background-color: $white;
+
+                h3 , .price , span {
+                    color: $black;
+                }
+            }
+
+            img {
+                height: 10rem;
+            }
+
+            h3 {
+                padding: 1rem 0;
+                @include fontStyle(2rem, $white);
+            }
+
+            .price {
+                padding: .5rem 0;
+                @include fontStyle(2.5rem, $white);
+
+                span {
+                    font-size: 1.5rem;
+                    text-decoration: line-through;
+                    font-weight: lighter;
+                }
+            }
+        }
+
+    }
+}
