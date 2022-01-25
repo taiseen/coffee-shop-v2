@@ -9,5 +9,5 @@
 - Side Toggle Menu Button 
 - Side Cart Menu 
 - Search Button 
-- Div Opacity Hover Effect 
+- Google Map add
 - Responsiveness

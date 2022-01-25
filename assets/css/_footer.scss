@@ -1,0 +1,52 @@
+.footer {
+    text-align      : center;
+    background-color: $black;
+
+    .share {
+        padding: 1rem 0;
+
+        a {
+            width        : 5rem;
+            height       : 5rem;
+            line-height  : 5rem;
+            margin       : .5rem;
+            border       : $border;
+            border-radius: 50%;
+            @include fontStyle(2rem, $white);
+
+            &:hover {
+                color           : $black;
+                background-color: $main-color;
+            }
+        }
+    }
+
+    .links {
+        display        : flex;
+        justify-content: center;
+        flex-wrap      : wrap;
+        gap            : 1rem;
+        padding        : 2rem 0;
+
+        a {
+            padding: 0.7rem 2rem;
+            border : $border;
+            @include fontStyle(2rem, $white);
+
+            &:hover {
+                color           : $black;
+                background-color: $main-color;
+            }
+        }
+    }
+
+    .credit {
+        padding    : 1.5rem;
+        font-weight: lighter;
+        @include fontStyle(2.5rem, $white);
+
+        span {
+            color: $main-color;
+        }
+    }
+}

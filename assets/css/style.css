@@ -33,7 +33,8 @@ Style Scale for all
 but in responsive - its resizing at 991px
 */
 section {
-  padding: 2rem 7%; }
+  padding: 2rem 7%;
+  margin-bottom: 3rem; }
 
 .heading {
   padding-bottom: 3.5rem;
@@ -324,9 +325,83 @@ section {
         width: 100%;
         padding: 2rem;
         background: none;
-        text-transform: none;
+        text-transform: capitalize;
         font-size: 2rem;
         color: #FFF; }
+
+.blogs .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem; }
+  .blogs .box-container .box {
+    border: 0.1rem solid rgba(255, 255, 255, 0.3); }
+    .blogs .box-container .box .image {
+      width: 100%;
+      height: 25rem;
+      overflow: hidden; }
+      .blogs .box-container .box .image:hover img {
+        transform: scale(1.2); }
+      .blogs .box-container .box .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .blogs .box-container .box .content {
+      padding: 2rem; }
+      .blogs .box-container .box .content .title {
+        line-height: 1.5;
+        font-size: 2.5rem;
+        color: #FFF; }
+        .blogs .box-container .box .content .title:hover {
+          color: #D3AD7F; }
+      .blogs .box-container .box .content span {
+        display: block;
+        padding-top: 1rem;
+        font-size: 2rem;
+        color: #D3AD7F; }
+      .blogs .box-container .box .content p {
+        padding: 1rem 0;
+        line-height: 1.8;
+        font-size: 1.6rem;
+        color: #FFF; }
+
+.footer {
+  text-align: center;
+  background-color: #13131a; }
+  .footer .share {
+    padding: 1rem 0; }
+    .footer .share a {
+      width: 5rem;
+      height: 5rem;
+      line-height: 5rem;
+      margin: .5rem;
+      border: 0.1rem solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      font-size: 2rem;
+      color: #FFF; }
+      .footer .share a:hover {
+        color: #13131a;
+        background-color: #D3AD7F; }
+  .footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem 0; }
+    .footer .links a {
+      padding: 0.7rem 2rem;
+      border: 0.1rem solid rgba(255, 255, 255, 0.3);
+      font-size: 2rem;
+      color: #FFF; }
+      .footer .links a:hover {
+        color: #13131a;
+        background-color: #D3AD7F; }
+  .footer .credit {
+    padding: 1.5rem;
+    font-weight: lighter;
+    font-size: 2.5rem;
+    color: #FFF; }
+    .footer .credit span {
+      color: #D3AD7F; }
 
 @media (max-width: 991px) {
   html {

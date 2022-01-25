@@ -47,7 +47,8 @@ Style Scale for all
 but in responsive - its resizing at 991px
 */
 section {
-    padding: 2rem 7%;
+    padding      : 2rem 7%;
+    margin-bottom: 3rem;
 }
 
 .heading {
@@ -75,6 +76,8 @@ section {
     }
 }
 
+
+
 @import 'header';
 @import 'home';
 @import 'about';
@@ -82,4 +85,6 @@ section {
 @import 'products';
 @import 'reviews';
 @import 'contacts';
+@import 'blogs';
+@import 'footer';
 @import 'responsiveness';

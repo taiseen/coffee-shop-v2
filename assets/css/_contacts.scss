@@ -39,7 +39,7 @@
                     width         : 100%;
                     padding       : 2rem;
                     background    : none;
-                    text-transform: none;
+                    text-transform: capitalize;
                     @include fontStyle(2rem, $white);
                 }
             }
