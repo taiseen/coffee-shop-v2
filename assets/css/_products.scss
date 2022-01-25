@@ -53,12 +53,12 @@
                 }
 
                 .price {
-                    @include fontStyle(1.7rem, $main-color);
+                    @include fontStyle(2.5rem, $main-color);
 
                     span {
-                        font-size      : 1.5rem;
+                        text-decoration: line-through !important;
                         font-weight    : lighter;
-                        text-decoration: line-through;
+                        font-size      : 1.5rem;
                     }
                 }
             }

@@ -1,0 +1,36 @@
+.reviews {
+
+    .box-container {
+
+        @include grid(30rem);
+
+        .box {
+            padding   : 3rem 2rem;
+            border    : $border;
+            text-align: center;
+
+            p {
+                padding    : 2rem 0;
+                min-height : 15rem;
+                line-height: 1.8;
+                @include fontStyle(1.5rem, $white);
+            }
+
+            .users {
+                height       : 9rem;
+                width        : 9rem;
+                border-radius: 50%;
+                object-fit   : cover;
+            }
+
+            h3 {
+                padding: 1rem 0;
+                @include fontStyle(2rem, $white);
+            }
+
+            .stars i {
+                @include fontStyle(1.5rem, $main-color);
+            }
+        }
+    }
+}

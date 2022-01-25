@@ -14,18 +14,14 @@
 
             &:hover {
                 background-color: $white;
-
-                h3 , .price , span {
-                    color: $black;
-                }
             }
 
-            // &:hover * {
-            //     color: $black;
-            // }
+            &:hover > * {
+                color: $black !important;
+            }
 
             img {
-                height: 10rem;
+                height: 15rem;
             }
 
             h3 {
@@ -39,8 +35,8 @@
 
                 span {
                     font-size      : 1.5rem;
-                    text-decoration: line-through;
                     font-weight    : lighter;
+                    text-decoration: line-through !important;
                 }
             }
         }

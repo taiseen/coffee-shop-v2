@@ -209,10 +209,10 @@ section {
     text-align: center; }
     .menu .box-container .box:hover {
       background-color: #FFF; }
-      .menu .box-container .box:hover h3, .menu .box-container .box:hover .price, .menu .box-container .box:hover span {
-        color: #13131a; }
+    .menu .box-container .box:hover > * {
+      color: #13131a !important; }
     .menu .box-container .box img {
-      height: 10rem; }
+      height: 15rem; }
     .menu .box-container .box h3 {
       padding: 1rem 0;
       font-size: 2rem;
@@ -223,8 +223,8 @@ section {
       color: #FFF; }
       .menu .box-container .box .price span {
         font-size: 1.5rem;
-        text-decoration: line-through;
-        font-weight: lighter; }
+        font-weight: lighter;
+        text-decoration: line-through !important; }
 
 .products .box-container {
   display: grid;
@@ -258,12 +258,75 @@ section {
         font-size: 1.7rem;
         color: #D3AD7F; }
     .products .box-container .box .content .price {
-      font-size: 1.7rem;
+      font-size: 2.5rem;
       color: #D3AD7F; }
       .products .box-container .box .content .price span {
-        font-size: 1.5rem;
+        text-decoration: line-through !important;
         font-weight: lighter;
-        text-decoration: line-through; }
+        font-size: 1.5rem; }
+
+.reviews .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem; }
+  .reviews .box-container .box {
+    padding: 3rem 2rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    text-align: center; }
+    .reviews .box-container .box p {
+      padding: 2rem 0;
+      min-height: 15rem;
+      line-height: 1.8;
+      font-size: 1.5rem;
+      color: #FFF; }
+    .reviews .box-container .box .users {
+      height: 9rem;
+      width: 9rem;
+      border-radius: 50%;
+      object-fit: cover; }
+    .reviews .box-container .box h3 {
+      padding: 1rem 0;
+      font-size: 2rem;
+      color: #FFF; }
+    .reviews .box-container .box .stars i {
+      font-size: 1.5rem;
+      color: #D3AD7F; }
+
+.contacts .row {
+  display: flex;
+  flex-wrap: wrap;
+  background: #13131a;
+  gap: 1rem; }
+  .contacts .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    min-height: 40rem;
+    object-fit: cover; }
+  .contacts .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center; }
+    .contacts .row form h3 {
+      text-transform: uppercase;
+      font-size: 3.5rem;
+      color: #FFF; }
+    .contacts .row form .inputBox {
+      display: flex;
+      align-items: center;
+      margin: 2rem 0;
+      border: 0.1rem solid rgba(255, 255, 255, 0.3);
+      background-color: #010103; }
+      .contacts .row form .inputBox span {
+        padding-left: 2rem;
+        font-size: 2rem;
+        color: #FFF; }
+      .contacts .row form .inputBox input {
+        width: 100%;
+        padding: 2rem;
+        background: none;
+        text-transform: none;
+        font-size: 2rem;
+        color: #FFF; }
 
 @media (max-width: 991px) {
   html {

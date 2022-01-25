@@ -1,0 +1,48 @@
+.contacts {
+
+    .row {
+        display   : flex;
+        flex-wrap : wrap;
+        background: $black;
+        gap       : 1rem;
+
+        .map {
+            flex      : 1 1 45rem;
+            width     : 100%;
+            min-height: 40rem;
+            object-fit: cover;
+        }
+
+        form {
+            flex      : 1 1 45rem;
+            padding   : 5rem 2rem;
+            text-align: center;
+
+            h3 {
+                text-transform: uppercase;
+                @include fontStyle(3.5rem, $white);
+            }
+
+            .inputBox {
+                display         : flex;
+                align-items     : center;
+                margin          : 2rem 0;
+                border          : $border;
+                background-color: $bg;
+
+                span {
+                    padding-left: 2rem;
+                    @include fontStyle(2rem, $white);
+                }
+
+                input {
+                    width         : 100%;
+                    padding       : 2rem;
+                    background    : none;
+                    text-transform: none;
+                    @include fontStyle(2rem, $white);
+                }
+            }
+        }
+    }
+}
