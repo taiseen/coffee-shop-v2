@@ -31,8 +31,9 @@
             height          : calc(100vh - 9.5rem);
             background-color: $white;
 
-            /* Number 3 :- show at user click by --> JS */
+
             &.user-click-at-menu {
+                /* Number 3 :- show at user click by --> JS */
                 right: 0;
             }
 
