@@ -8,7 +8,7 @@
     border            : 0;
     outline           : none;
     list-style        : none;
-    text-decoration   : none !important;
+    text-decoration   : none;
     text-transform    : capitalize;
     box-sizing        : border-box;
     font-family       : 'Nunito', sans-serif;
@@ -49,6 +49,10 @@ but in responsive - its resizing at 991px
 section {
     padding      : 2rem 7%;
     margin-bottom: 3rem;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
 }
 
 .heading {
